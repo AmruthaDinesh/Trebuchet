@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!--will you able to see the moblik-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebuchet</title>
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class="t-body">
+        {% include 'home.html' %}
+        {% include 'technology.html' %}
+        {% include 'service.html' %}
+        {% include 'contact.html' %}
+    </div>
+    
+    <script>
+        // about
+        $("#about").mouseenter(function(){
+            $("#nav-about").css("color", "green");
+        });
+        $("#about").mouseleave(function(){
+            $("#nav-about").css("color", "white");
+        });
+
+        // contact
+        $("#contact").mouseenter(function(){
+            $("#nav-contact").css("color", "green");
+        });
+        $("#contact").mouseleave(function(){
+            $("#nav-contact").css("color", "white");
+        });
+
+        // services
+        $("#services").mouseenter(function(){
+            $("#nav-services").css("color", "green");
+        });
+        $("#services").mouseleave(function(){
+            $("#nav-services").css("color", "white");
+        });
+
+        // tech
+        $("#tech").mouseenter(function() {
+            $("#nav-tech").css("color", "green");
+        });
+        $("#tech").mouseleave(function(){
+            $("#nav-tech").css("color", "white");
+        });
+    </script>
+    <style>
+        .t-body {
+            margin-top: 15vh;
+        }
+    </style>
+</body>
+</html>

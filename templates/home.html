@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="top-wrapper" id="about">
+<h1>Virtual devices.</h1>
+ <h1> Real-world accuracy.</h1>
+ <!-- <! -->
+<h3>We are a technology company that develops interactive solutions for futuristic platforms.</h3>
+</div>
+<style>
+
+.top-wrapper
+{ 
+    
+    margin: 5rem 10rem 5rem 5rem;
+    /* background-color: black; */
+    color: white;
+    z-index: 0;
+    /* overflow-x: hidden; */
+   
+}
+.top-wrapper h1
+{
+    font-size: 5rem;
+}
+
+.top-wrapper h3
+{
+    font-size: 1.5rem;
+    
+    /* padding-right: 30rem; */
+}
+
+@media all and (max-width: 670px)
+{
+
+    .top-wrapper
+    {
+        margin:1%;
+        text-align: center;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+   /* overflow-x: hidden;*//*width 98%?*/
+   width: 99%;
+   font-size: 30px;
+    }
+.top-wrapper h1
+{
+   /* padding: 2%;*/
+    width: 98%;
+    
+}
+.top-wrapper h3
+{
+    padding: 2%;
+    width: 98%;
+}
+
+}
+</style>
+
+
+{% endblock%}

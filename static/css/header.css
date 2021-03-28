@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+.t-header {
+    height: 15vh;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* overflow: hidden; */
+    font-size: 2vh;
+    background-color: black;
+    /* background-color: pink; */
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    
+}
+.t-logo img {
+   height: 5vh;
+    width: 5vh;
+}
+.t-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 15%;
+    margin-left: 2%;
+    font-size: 3.6vh;
+    letter-spacing: 3.6px;
+    font-weight: 900;
+}
+.t-logo p {
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.navbar-wide {
+    position: fixed;
+    right: 0;
+    /* position: relative; */
+}
+
+.navbar-item {
+    cursor: pointer;
+    height: 100%;
+    color: white;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar-item:hover {
+    /* color: darkgray; */
+    /* font-size: 2.2vh; */
+    color: green;
+    font-weight: 900;
+}
+.navbar-item-active {
+    font-weight: 900;
+    color: green;
+}
+.nav-dropdown {
+    width: 0;
+    font-size: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {                 /*ividem tott thaze vare...full youtube l kanda code aanu..i*/
+        width: 0;
+        font-size: 0;
+        margin: 0;
+    }
+.t-header 
+{
+    /* width: 100%;width alla-margin? */
+    position: fixed;
+    /* top: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: tomato;
+}
+.t-logo {
+    /*margin-left: 10%;*/
+    /* padding-left: 5%; */
+    width: 40%;
+
+}
+
+.nav-dropdown-btn {
+        background-color: transparent;
+        color: white;
+        /* font-size: 20px; */
+        /*  */
+        border: none;
+        cursor: pointer;
+        outline: none;
+        margin-left: -100px;
+    }
+    .nav-dropdown {
+        position: relative;
+        display: inline-block;
+        width: 5%;
+        /* margin-right: 5%; */
+    }
+    .nav-dropdown-content {
+      /*  color: black;*/
+        /*background-color: white;*/
+        /*background-color: white;*/
+       display: none;
+       /*ooh ke*/
+        position: absolute;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.2);
+        z-index: 4;
+        width: 0;
+    }
+    .nav-dropdown-content a {
+        color: black;
+        background-color: white;/*white*/
+        padding: 12px 16px;
+        text-decoration: none;
+        display: none;
+        font-size: 14px;
+    }
+    .show-nav-dropdown {
+        color: black;
+        background-color: white;
+        display: block;
+        margin-left: -70px;
+        /* z-index: 100; */
+    }
+    .show-nav-dropdown a {
+        display: block;
+    }
+}

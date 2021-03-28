@@ -1,0 +1,50 @@
+<link href="{{ url_for('static', filename='css/header.css') }}" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round">
+
+<div class="t-header">
+
+    <div class="t-logo">
+        <img src="{{ url_for('static', filename='img/logo_white.png') }}"/>
+        <p>Tebuchet</p>
+    </div>
+
+    <div class="navbar navbar-wide">
+        <a href="#about"><span class="navbar-item" id="nav-about">ABOUT US</span></a>
+        <a href="#contact"><span class="navbar-item" id="nav-contact">CONTACT</span></a>
+        <a href="#services"><span class="navbar-item" id="nav-services">SERVICES</span></a>
+        <a href="#tech"><span class="navbar-item" id="nav-tech">TECHNOLOGY</span></a>
+    </div>
+
+    <div class="nav-dropdown">
+        <button onclick="toggleDropDown()" class="material-icons-round nav-dropdown-btn">menu</button>
+        <div id="nav-dropdown-id" class="nav-dropdown-content">
+          <a href="#contact">About</a>
+          <a href="#services">Contact</a>
+          <a href="#tech">Services</a>
+          <a href="#tech">Technologies</a>
+        </div>
+    </div>
+    
+  </div>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function toggleDropDown() {
+          document.getElementById("nav-dropdown-id").classList.toggle("show-nav-dropdown");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.nav-dropdown-btn')) {
+            var dropdowns = document.getElementsByClassName("nav-dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show-nav-dropdown')) {
+                openDropdown.classList.remove('show-nav-dropdown');
+              }
+            }
+          }
+        }
+    </script>
