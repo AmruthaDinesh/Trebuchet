@@ -10,10 +10,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* overflow: hidden; */
     font-size: 2vh;
     background-color: black;
-    /* background-color: pink; */
     color: white;
     font-family: 'Rubik', sans-serif;
     position: fixed;
@@ -48,7 +46,6 @@
 .navbar-wide {
     position: fixed;
     right: 0;
-    /* position: relative; */
 }
 
 .navbar-item {
@@ -60,8 +57,6 @@
     text-decoration: none;
 }
 .navbar-item:hover {
-    /* color: darkgray; */
-    /* font-size: 2.2vh; */
     color: green;
     font-weight: 900;
 }
@@ -75,24 +70,20 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .navbar {                 /*ividem tott thaze vare...full youtube l kanda code aanu..i*/
+    .navbar {    
         width: 0;
         font-size: 0;
         margin: 0;
     }
 .t-header 
 {
-    /* width: 100%;width alla-margin? */
     position: fixed;
-    /* top: 0; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: tomato;
 }
 .t-logo {
-    /*margin-left: 10%;*/
-    /* padding-left: 5%; */
     width: 40%;
 
 }
@@ -100,8 +91,6 @@
 .nav-dropdown-btn {
         background-color: transparent;
         color: white;
-        /* font-size: 20px; */
-        /*  */
         border: none;
         cursor: pointer;
         outline: none;
@@ -111,14 +100,9 @@
         position: relative;
         display: inline-block;
         width: 5%;
-        /* margin-right: 5%; */
     }
     .nav-dropdown-content {
-      /*  color: black;*/
-        /*background-color: white;*/
-        /*background-color: white;*/
        display: none;
-       /*ooh ke*/
         position: absolute;
         min-width: 160px;
         overflow: auto;
@@ -128,7 +112,7 @@
     }
     .nav-dropdown-content a {
         color: black;
-        background-color: white;/*white*/
+        background-color: white;
         padding: 12px 16px;
         text-decoration: none;
         display: none;
@@ -139,7 +123,6 @@
         background-color: white;
         display: block;
         margin-left: -70px;
-        /* z-index: 100; */
     }
     .show-nav-dropdown a {
         display: block;

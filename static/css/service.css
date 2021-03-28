@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
 
 .service {
     margin: 5% 6%;
@@ -11,7 +10,7 @@
     font-size: 36px;
 }
 .service-head p {
-    font-size: 30px;/*okke ..:D:)*/
+    font-size: 30px;
 }
 .service-cards {
     display: flex;
@@ -37,7 +36,6 @@
 }
 .service-card-icon {
     font-size: 30px;
-    /* background-color: dodgerblue; */
     font-weight: 900;
     border-radius: 100px;
     height: 75px;
@@ -50,7 +48,6 @@
     
     margin-top: -1%;
     margin-left: -5%;
-    /*font-family: 'Ranchers', cursive;*/
     background-color: rgb(30, 30, 30);
     color: rgb(0, 160, 0);
 }
@@ -80,3 +77,4 @@
         text-align: center;
     }
 }
+
