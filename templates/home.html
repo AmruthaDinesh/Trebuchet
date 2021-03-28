@@ -2,19 +2,86 @@
 
 
 {% block content %}
+
+    <!-- bg img ee div nu maathram mathiyoo..uru bg img mathille..aa 1st matram..bakki okke ippo ullathalle nallathu? ok -->
 <div class="top-wrapper" id="about">
-<h1>Virtual devices.</h1>
- <h1> Real-world accuracy.</h1>
+<h1>Trebuchet</h1>
  <!-- <! -->
+ <br>
 <h3>We are a technology company that develops interactive solutions for futuristic platforms.</h3>
 </div>
-<style>
+<div class="ideas">
+    <h1>Our idea</h1>
+    <div class="idea-box">
+        
+        <div class="idea-card">
+            <h3>Accurate Sizing</h3>
+        </div>
 
+        <div class="idea-card">
+            <h3>Accurate Color and Texture</h3>
+        </div>
+
+        <div class="idea-card">
+            <h3>Get real feel for the product</h3>
+        </div>
+        
+    </div>
+
+</div>
+
+<style>
+    .ideas
+    {
+        /* background-image: url("../static/img/bg.jpg"); */
+        background-image: url("{{ url_for('static', filename='img/bg.jpg') }}");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: black;
+        background-position: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        padding-right: 350px;
+        text-align: left;
+        /* daaa or..do one thing..bg img..full kodukanda> ..aa trebuchent nte thaze aayit koduthalo?..excluding trebuchet and the intro???*/
+        /*right ondo?..kannan kollulale? flip cheytha kolla..*/
+        /*Background image idanam..u continue img evide*/
+    }
+    .ideas h1 {
+        color: green;
+    }
+    .ideas h3 {
+        padding: 30px 20px;/*pacha box?*/
+        border: 1.5px solid green;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+    .ideas h3:hover
+    {
+        border: 1.5px solid white;
+        background-color: white;
+        color: black;
+    }
+/*.idea-box
+{
+    display: flex;
+    border: 2px solid green;
+    margin: 2rem;
+    color: white;
+}
+
+.idea-card
+{
+    padding: 2rem;
+    width:33%;
+}*/
 .top-wrapper
 { 
     
-    margin: 5rem 10rem 5rem 5rem;
-    /* background-color: black; */
+    padding: 5rem 10rem 5rem 5rem;/*margin mattit--padding??*/
+     background-color: black; /*da..img work aavanundakum but black aayyathu kond kaanathatho??*/
     color: white;
     z-index: 0;
     /* overflow-x: hidden; */
@@ -22,19 +89,55 @@
 }
 .top-wrapper h1
 {
-    font-size: 5rem;
+    font-size: 3rem;
+    text-align: center;
+animation: fadeIn ease 10s;
+-webkit-animation: fadeIn ease 10s;
+-moz-animation: fadeIn ease 10s;
+-o-animation: fadeIn ease 10s;
+-ms-animation: fadeIn ease 10s;
 }
 
 .top-wrapper h3
 {
     font-size: 1.5rem;
-    
+    text-align: center;
     /* padding-right: 30rem; */
+}
+
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
 }
 
 @media all and (max-width: 670px)
 {
 
+    .ideas {
+        padding-right: 2%;
+        
+        
+    }
     .top-wrapper
     {
         margin:1%;
@@ -56,6 +159,8 @@
     padding: 2%;
     width: 98%;
 }
+
+
 
 }
 </style>
