@@ -10,6 +10,7 @@ body {
     font-family: 'Rubik', sans-serif;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
 }
 body::-webkit-scrollbar { /* Chrome, Safari, Opera */
     display: none;
